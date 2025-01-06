@@ -4,6 +4,10 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.sql.Time;
+import java.time.LocalTime;
 
 @Table(name="customers")
 @Data
@@ -28,10 +32,42 @@ public class Customers {
 
 }
 
+@Table (name="accounts")
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Accounts {
+    @Id
+    @GeneratedValue
+    private Long accountId;
+
+    private String status;
+
+    private String type;
+
+    private Long balance;
+
+
 
 }
-
+@Entity
+@Table (name="transactions")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Transactions {
+    @Id
+    @GeneratedValue
+    private Long accountId;
+
+    private Long transactionId;
+
+    private String type;
+
+    private Long amount;
+
+    private LocalTime createdAt;
+
 
 }
