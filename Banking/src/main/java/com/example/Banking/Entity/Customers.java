@@ -39,7 +39,8 @@ public class Customers {
 @AllArgsConstructor
 public class Accounts {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long accountId;
 
     private String status;
@@ -51,15 +52,18 @@ public class Accounts {
 
 
 }
-@Entity
+
 @Table (name="transactions")
+@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Transactions {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long accountId;
+
 
     private Long transactionId;
 
