@@ -18,18 +18,15 @@ Java I/O: For reading/writing files if the project uses flat file storage.
 Java Streams: For processing collections and improving performance.
 
 Database Interaction:
-
 JDBC (Java Database Connectivity): For basic database operations.
 Hibernate ORM: Simplifies database interaction with object-relational mapping.
 HikariCP: A high-performance JDBC connection pooling library.
 
 Encryption and Security:
-
 Java Cryptography Architecture (JCA): For encryption, hashing, and secure data storage (e.g., MessageDigest for hashing passwords).
 Bouncy Castle: Advanced cryptographic operations.
 
 Testing:
-
 JUnit 5: For unit testing core functionality.
 Mockito: For mocking dependencies in unit tests.
 
@@ -37,17 +34,14 @@ Web and API Development
 If you're planning to make the system a web-based application:
 
 Web Framework:
-
 Spring Boot: Simplifies building REST APIs, MVC web apps, and microservices.
 Jakarta EE (formerly Java EE): For building enterprise-grade web applications.
 
 Templating and Frontend Integration:
-
 Thymeleaf: For server-side rendering of dynamic HTML pages.
 JSP/Servlets: For basic web applications.
 
 API Documentation:
-
 Swagger (SpringDoc): For auto-generating REST API documentation.
 Database Management
 
