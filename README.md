@@ -1,16 +1,28 @@
 # Banking Application
 
+<div align="center">
+  <img src="https://via.placeholder.com/600x200.png?text=Banking+Application" alt="Banking Application Banner">
+</div>
+
+---
+
 This repository contains a comprehensive **Banking System Project**, designed to simulate real-world banking operations. The project includes features like account creation, balance inquiries, deposits, withdrawals, and transaction history, making it an excellent resource for learning or implementing core banking functionalities.
 
-## Key Features
+---
+
+## 🚀 Key Features
+
 - **Account Management**: Create and manage multiple bank accounts with unique identifiers.
 - **Secure Transactions**: Ensure safe and accurate deposit and withdrawal operations.
 - **User-Friendly Interface**: Intuitive design for ease of use and accessibility.
 - **Transaction History**: Log and view detailed transaction records.
 
-## Technology Stack
+---
 
-### Core Features and Libraries
+## 🛠️ Technology Stack
+
+### 📌 Core Features and Libraries
+
 - **Core Java**:
   - Java Collections Framework: For managing lists of users, transactions, and accounts (e.g., `ArrayList`, `HashMap`).
   - Java I/O: For reading/writing files if the project uses flat file storage.
@@ -26,8 +38,12 @@ This repository contains a comprehensive **Banking System Project**, designed to
   - JUnit 5: For unit testing core functionality.
   - Mockito: For mocking dependencies in unit tests.
 
-### Web and API Development
+---
+
+### 🌐 Web and API Development
+
 If you're planning to make the system a web-based application:
+
 - **Web Framework**:
   - Spring Boot: Simplifies building REST APIs, MVC web apps, and microservices.
   - Jakarta EE (formerly Java EE): For building enterprise-grade web applications.
@@ -37,34 +53,54 @@ If you're planning to make the system a web-based application:
 - **API Documentation**:
   - Swagger (SpringDoc): For auto-generating REST API documentation.
 
-### Database Management
+---
+
+### 📂 Database Management
+
 - **Relational Databases**:
   - MySQL, PostgreSQL, or Oracle Database.
   - Use Hibernate ORM or Spring Boot's JPA for database mapping.
 - **In-Memory Databases** (optional for testing):
   - H2 Database: Lightweight and fast for development and testing.
 
-### Build and Dependency Management
+---
+
+### 📦 Build and Dependency Management
+
 - **Maven**: For managing dependencies and building the project.
 - **Gradle**: An alternative to Maven, known for better performance.
 
-### Development Tools
+---
+
+### 🛠️ Development Tools
+
 - **IDE**: Use IntelliJ IDEA or Eclipse for Java development.
 - **Version Control**: Use Git and platforms like GitHub to manage your code.
 
-## Getting Started
+---
+
+## ⚙️ Getting Started
+
 Clone the repository and follow the installation guide to set up the project locally. Ideal for developers, students, or enthusiasts exploring banking systems.
 
-## Contribution
+---
+
+## 🤝 Contribution
+
 Feel free to fork the repository and submit pull requests for improvements or additional features.
 
-## Spring Boot Project Setup
+---
+
+## 🌱 Spring Boot Project Setup
+
 1. Go to Spring Initializr: [start.spring.io](https://start.spring.io)
 2. Select your project settings and dependencies.
 3. Download the project and import it into your IDE.
 
-![Spring Initializr Snapshot](https://github.com/user-attachments/assets/9d89f48d-b1df-40c4-a126-fe2d831bcb03)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9d89f48d-b1df-40c4-a126-fe2d831bcb03" alt="Spring Initializr Snapshot">
+</div>
 
 ---
 
-Let me know if you'd like to modify or expand upon this README!
+### ✨ Let us know how we can improve or expand upon this README!
