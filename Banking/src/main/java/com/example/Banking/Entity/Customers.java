@@ -1,16 +1,12 @@
 package com.example.Banking.Entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
+import lombok.*;
 
-import java.sql.Time;
-import java.time.LocalTime;
 
 @Table(name="customers")
-@Data
+@Getter
+@Setter
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -29,49 +25,45 @@ public class Customers {
 
     private String password;
 
+    public String getCustomerName() {
+        return customerName;
+    }
 
+    public String getCustomerAddress() {
+        return customerAddress;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getCustomerEmail() {
+        return customerEmail;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setCustomerAddress(String customerAddress) {
+        this.customerAddress = customerAddress;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void setCustomerEmail(String customerEmail) {
+        this.customerEmail = customerEmail;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setCustomerName(String customerName){
+    this.customerName = customerName;}
 }
 
-@Table (name="accounts")
-@Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class Accounts {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    private Long accountId;
-
-    private String status;
-
-    private String type;
-
-    private Long balance;
 
 
-
-}
-
-@Table (name="transactions")
-@Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class Transactions {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    private Long accountId;
-
-
-    private Long transactionId;
-
-    private String type;
-
-    private Long amount;
-
-    private LocalTime createdAt;
-
-
-}
